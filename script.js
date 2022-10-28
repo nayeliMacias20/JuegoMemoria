@@ -13,9 +13,9 @@ let mostrarmov = document.getElementById('movimientos');
 let mostraraci = document.getElementById('aciertos');
 
 //Para crear un array aleatorio utilizaremos sort.
-let numeros = [1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8];
-numeros = numeros.sort(()=>{return Math.random()-0.5});
-console.log(numeros);
+let imagenes = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+imagenes = imagenes.sort(()=>{return Math.random()-0.5});
+//console.log(imagenes);
 
 
 
@@ -23,13 +23,13 @@ console.log(numeros);
 function back(id){
     //contador de cartas destapadas
     cartasback++;
-    console.log(cartasback);
+    //console.log(cartasback);
     
     if(cartasback == 1){
         //Mostramos la primera carta
         carta1 = document.getElementById(id);
         //Guardamos el valor del primer back
-        primerback = numeros[id];
+        primerback = imagenes[id];
         //Imprimimos la imagen
         carta1.innerHTML = `<img src="./img/${primerback}.png">`;
         //Deshabilitamos la primer seleccion
@@ -38,7 +38,7 @@ function back(id){
         //Mostramos la segunda carta
         carta2 = document.getElementById(id);
         //Guardamos el segundo valor del back
-        segundoback = numeros[id];
+        segundoback = imagenes[id];
         //Imprimimos la imgane
         carta2.innerHTML = `<img src="./img/${segundoback}.png">`;
         //Deshabilitamos la segunda seccion
