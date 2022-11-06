@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,43 +10,48 @@
     <title>Juego de Memoria</title>
 </head>
 <body>
+   <img class="banner" src="./img/Banner1.png">
     <div class="container">
         <main>
             <section class="seccion1">
-                <h1 class="text-center">Juego de Memoria</h1>
                 <table>
                     <tr>
                         <td><button id="0" onclick="back(0)"></button></td>
-                        <td><button id="1"onclick="back(1)"></button></td>
-                        <td><button id="2"onclick="back(2)"></button></td>
-                        <td><button id="3"onclick="back(3)"></button></td>
+                        <td><button id="1" onclick="back(1)"></button></td>
+                        <td><button id="2" onclick="back(2)"></button></td>
+                        <td><button id="3" onclick="back(3)"></button></td>
                     </tr>
                     <tr>
-                        <td><button id="4"onclick="back(4)"></button></td>
-                        <td><button id="5"onclick="back(5)"></button></td>
-                        <td><button id="6"onclick="back(6)"></button></td>
-                        <td><button id="7"onclick="back(7)"></button></td>
+                        <td><button id="4" onclick="back(4)"></button></td>
+                        <td><button id="5" onclick="back(5)"></button></td>
+                        <td><button id="6" onclick="back(6)"></button></td>
+                        <td><button id="7" onclick="back(7)"></button></td>
                     </tr>
                     <tr>
-                        <td><button id="8"onclick="back(8)"></button></td>
-                        <td><button id="9"onclick="back(9)"></button></td>
-                        <td><button id="10"onclick="back(10)"></button></td>
-                        <td><button id="11"onclick="back(11)"></button></td>
+                        <td><button id="8" onclick="back(8)"></button></td>
+                        <td><button id="9" onclick="back(9)"></button></td>
+                        <td><button id="10" onclick="back(10)"></button></td>
+                        <td><button id="11" onclick="back(11)"></button></td>
                     </tr>
                     <tr>
-                        <td><button id="12"onclick="back(12)"></button></td>
-                        <td><button id="13"onclick="back(13)"></button></td>
-                        <td><button id="14"onclick="back(14)"></button></td>
-                        <td><button id="15"onclick="back(15)"></button></td>
+                        <td><button id="12" onclick="back(12)"></button></td>
+                        <td><button id="13" onclick="back(13)"></button></td>
+                        <td><button id="14" onclick="back(14)"></button></td>
+                        <td><button id="15" onclick="back(15)"></button></td>
                     </tr>
                 </table>
+                <h1>Reiniciar Juego </h1>
+            <button class="reiniciar" onclick="reinicio()"><img src="./img/reiniciar.png"></button>
             </section>
             <section class="seccion2">
-                <h2 id="aciertos" class="estadisticas">Aciertos: 0</h2>
-                <h2 id="movimientos" class="estadisticas">Movimientos: 0</h2>
+                <h2 id="aciertos" class="aciertos1">Aciertos:0</h2>
+                <h2 id="movimientos" class="movimientos1">Movimientos:0</h2>
+                <h2 id="tiempo" class="tiempo1">Tiempo: </h2>
             </section>
+            
         </main>
     </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
